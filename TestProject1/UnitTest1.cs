@@ -75,6 +75,14 @@ namespace TestProject1
 
             Console.WriteLine(product.GetCountForProduct(1));
         }
+
+        [TestMethod]
+        public void ReturnSum()
+        {
+            Item i = new Item(1, "fddffc", 5, 10);
+
+            Assert.IsTrue(i.RowPrice() == 50);
+        }
     }
 
 }
